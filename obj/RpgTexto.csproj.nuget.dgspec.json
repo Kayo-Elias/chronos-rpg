@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\dev\\RpgTexto\\RpgTexto.csproj": {}
+    "C:\\dev\\RpgTexto\\RpgTexto.csproj": {}
   },
   "projects": {
-    "c:\\dev\\RpgTexto\\RpgTexto.csproj": {
+    "C:\\dev\\RpgTexto\\RpgTexto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\dev\\RpgTexto\\RpgTexto.csproj",
+        "projectUniqueName": "C:\\dev\\RpgTexto\\RpgTexto.csproj",
         "projectName": "RpgTexto",
-        "projectPath": "c:\\dev\\RpgTexto\\RpgTexto.csproj",
+        "projectPath": "C:\\dev\\RpgTexto\\RpgTexto.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "c:\\dev\\RpgTexto\\obj\\",
+        "outputPath": "C:\\dev\\RpgTexto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
