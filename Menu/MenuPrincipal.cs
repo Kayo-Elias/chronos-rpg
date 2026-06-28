@@ -4,7 +4,6 @@ namespace Menu;
 
 public class Menu : MenuBase
 {
-
     public void ExibirEscolhaNick()
     {
         Console.WriteLine("Digite seu nick:");

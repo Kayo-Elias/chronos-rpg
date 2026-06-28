@@ -4,7 +4,6 @@ namespace Monstros;
 
 public class Goblin : MonstroBase
 {
-   
     public Goblin()
     {
         Nome = "Goblin";

@@ -6,5 +6,4 @@ public class Personagem
     public int Vida { get; set; }
     public int Ataque { get; set; }
     public int Mana { get; set; }
-
 }

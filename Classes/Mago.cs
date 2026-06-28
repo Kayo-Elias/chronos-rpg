@@ -16,5 +16,4 @@ public class Mago : Personagem
     {
         alvo.Vida -= Ataque;
     }
-    
 }
