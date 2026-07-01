@@ -1,4 +1,5 @@
 using Classes;
+using Players;
 
 namespace Monstros;
 
@@ -7,9 +8,12 @@ public class Goblin : MonstroBase
     public Goblin()
     {
         Nome = "Goblin";
-        Raca =  "Goblinus";
+        Raca = "Goblinus";
+        Dinheiro = 5;
+        Xp = 10;
         Vida = 20;
         Ataque = 12;
+        Xp = 10;
     }
 
     public void Atacar(Personagem alvo)
@@ -19,8 +23,12 @@ public class Goblin : MonstroBase
         Console.WriteLine($"{Nome} atacou {alvo.Nome} causando {Ataque} de dano.");
     }
 
-    public void Defender()
+    public void VerificarMorto(JogadorBase jogador)
     {
-        
+        if (Vida <= 0)
+        {
+            Console.WriteLine("você matou o Goblin.");
+            jogador.Nivel += Xp;
+        }
     }
 }

@@ -36,7 +36,6 @@ public class Jogadores : JogadorBase
 
     public bool SelecionarJogador()
     {
-
         Console.WriteLine("Deseja selecionar um jogador?");
         var selecionar = Console.ReadLine().ToLower();
 
