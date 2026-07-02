@@ -5,11 +5,12 @@ namespace Menu;
 
 public class MenuPrincipal
 {
-    Jogadores gerenciarJogadores = new Jogadores();
+    JogadorRepository jogadorRepository = new JogadorRepository();
+    JogadorService jogadorService = new JogadorService();
 
     public void SelecionarOuCriarJogador()
     {
-        Console.WriteLine("=====BEM-VINDO====");
+        Console.WriteLine("===================");
         Console.WriteLine("O que deseja fazer?");
         Console.WriteLine("===================");
 
@@ -20,22 +21,25 @@ public class MenuPrincipal
         switch (escolha)
         {
             case 1:
-                gerenciarJogadores.IniciarJogadores();
-                gerenciarJogadores.ListarJogadores();
-                gerenciarJogadores.SelecionarJogador();
+                jogadorRepository.Inicializar();
+                jogadorService.Listar();
+                jogadorService.Selecionar();
                 break;
 
             case 2:
-                gerenciarJogadores.IniciarJogadores();
-                gerenciarJogadores.ListarJogadores();
-                gerenciarJogadores.AdicionarJogador();
+                jogadorService.Adicionar();
+                jogadorRepository.Inicializar();
+                jogadorService.Listar();
                 break;
+
+            default:
+                throw new ArgumentException("Opção invalida!");
         }
     }
 
-    public Personagem EscolherClasse(short escolhaClasse)
+    public Personagem EscolherClasse()
     {
-        Console.WriteLine("====CHRONOS RPG=====");
+        Console.WriteLine("CHRONOS RPG");
 
         Console.WriteLine($"Escolha sua classe");
 
@@ -43,9 +47,10 @@ public class MenuPrincipal
         Console.WriteLine("2 - Guerreiro");
         Console.WriteLine("3 - Arqueiro");
         Console.WriteLine("4 - Assasino");
-        short escolha = short.Parse(Console.ReadLine());
+        
+        short escolhaClasse = short.Parse(Console.ReadLine());
 
-        Personagem personagem = EscolherClasse(escolha);
+        Personagem personagem = EscolherClasse();
 
         switch (escolhaClasse)
         {

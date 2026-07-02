@@ -1,9 +1,11 @@
-﻿using Menu;
+﻿using Classes;
+using Menu;
 using Players;
 
 
-Jogadores jogadores = new Jogadores();
+JogadorRepository jogadorRepository = new JogadorRepository();
+JogadorService jogadorService = new JogadorService();
 MenuPrincipal menu = new MenuPrincipal();
 
 menu.SelecionarOuCriarJogador();
-jogadores.IniciarJogadores();
+

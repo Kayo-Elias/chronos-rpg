@@ -23,7 +23,7 @@ public class Goblin : MonstroBase
         Console.WriteLine($"{Nome} atacou {alvo.Nome} causando {Ataque} de dano.");
     }
 
-    public void VerificarMorto(JogadorBase jogador)
+    public void VerificarMorto(Jogador jogador)
     {
         if (Vida <= 0)
         {
